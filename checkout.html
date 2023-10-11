@@ -1,45 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Checkout Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  
-  
-  <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">The Braid Bar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link"  href="userlogin.html">Login</a>
-                  <a class="nav-link" href="services.html">Services</a>
-                  <a class="nav-link active" aria-current="page" href="#">Checkout</a>
-                 </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">The Braid Bar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="userlogin.html">Login</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link active" aria-current="page" href="#">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <form>
+        <div class="p-2 text-center">
+          <h1 class="display-4">Your Info</h1>
+        </div>
+        <div class="row g-5 my-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            PLaceholder for services and Add-ons contents
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Your Address</h4>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="FirstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="" value="">
+              </div>
+              <div class="col-sm-6">
+                <label for="lastname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="" value="">
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" value="">
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or Suite" value="">
+              </div>
+              <div class="col-md-5 mb-4">
+                <label for="country" class="form-label"> Country</label>
+                <select class="form-select" id="country">
+                  <option vlaue="">Choose...</option>
+                  <option> Belgium</option>
+                  <option> France</option>
+                  <option>Germany</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="state" class="form-label"> State</label>
+                <select class="form-select" id="state">
+                  <option vlaue="">Choose...</option>
+                  <option>Not Applicable</option>
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>Arizona</option>
+                  <option>Arkansas</option>
+                  <option>California</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Delaware</option>
+                  <option>New Jersey</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Zipcode</label>
+                <input type="text" class="form-control" id="zip" placeholder="">
               </div>
             </div>
-          </nav>
-    </header>
+            <div class="row g-2">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="safe-info">
+                <label class="form-check-label" for="same-info">Save this information for next time</label>
+              </div>
+              <hr class="my-4">
 
-    <main>
+              <h4 class="mb-3">Payment</h4>
 
-    </main>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input">
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input">
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="form-floating col-md-6">
+                  <input type="text" class="form-control" id="cc-name" placeholder="Jane Doe">
+                  <label for="cc-name">Name on card</label>
+                  <small class="text-muted">Full name as displayed on card</small>
+                </div>
+
+                <div class="form-floating col-md-6">
+                  <input type="text" class="form-control" id="cc-number" placeholder="xxx-xxxxx-xx">
+                  <label for="cc-number">Credit card number</label>
+                </div>
+
+                <div class="form-floating col-md-3">
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="12/23">
+                  <label for="cc-expiration">Expiration</label>
+                </div>
+
+                <div class="form-floating col-md-3">
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="123">
+                  <label for="cc-cvv">CVV</label>
+                </div>
+                <button class=" w-100 btn btn-dark btn-lg" type="submit">Confirm Your Appointment</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </form>
+  
+  </div>
+  </main>
 
 
-    <footer>
+  <footer>
 
 
-    </footer>
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
