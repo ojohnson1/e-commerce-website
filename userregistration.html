@@ -32,38 +32,51 @@
     </nav>
   </header>
 
-  <main>
+  <main class="flexmain">
 
-    <form class="container">
-      <div id="formrow" class="row">
-        <div class="form-floating reg-col-md-6">
+   
+
+    <form id="registrationform" class="container p-4 rounded mt-5">
+     
+      <div id="formrow" class="row g-3">
+        <div class="col-12">
+          <h1 class="display-4 text-center"> Account Info </h1>
+        </div>
+        
+         <div class="form-floating col-md-6">
           <input type="text" class="form-control" id="firstname" placeholder="" value="">
           <label for="FirstName" class="form-label">First name</label>
         </div>
-        <div class="form-floating reg-col-md-6">
+       
+        <div class="form-floating col-md-6">
           <input type="text" class="form-control" id="lastname" placeholder="" value="">
           <label for="lastname" class="form-label">Last name</label>
         </div>
-        <div class=" form-floating reg-col-6">
+        <div class=" form-floating col-md-6">
           <input type="password" class="form-control" id="Password1" placeholder="">
           <label for="Password1" class="form-label">Password</label>
 
         </div>
-        <div class=" form-floating reg-col-6 ">
+        <div class=" form-floating col-md-6">
           <input type="password" class="form-control" id="ConfirmPassword" placeholder="">
           <label for=" ConfirmPassword" class="form-label"> Confirm Password</label>
         </div>
-        <div class="form-floating reg-col">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <div class="form-floating col-md-6">
+          <input type="email" class="form-control" id="Email" aria-describedby="emailconfirm"
             placeholder="Enter email">
-          <label for="exampleInputEmail1">Email address</label>
-
-          <div class="form-floating reg-col">
+          <label for="email">Email address</label>
+        </div>
+        <div class="form-floating col-md-6 ">
+          <input type="confirmemail" class="form-control" id="email" aria-describedby="emailconfirm"
+            placeholder="Enter email">
+          <label for="email"> Confirm Email address</label>
+        </div>
+          <div class="form-floating col-12">
             <input type="tel" class="form-control" id="phonenumber" aria-describedby="phone"
               placeholder="Enter phone number">
             <label for="phone">Phone</label>
           </div>
-
+         <p class="lead"> How did you hear about us?</p>
           <div class="my-3">
             <div class="form-check">
               <input id="friend" name="survey" type="radio" class="form-check-input" checked>
@@ -79,12 +92,12 @@
               <label class="form-check-label" for="debit">Other</label>
             </div>
             <div>
-              <textarea class="form-control" id="comments" rows="3"></textarea>
+              <textarea class="form-control"  id="comments" rows="3"></textarea>
             </div>
           </div>
         </div>
 
-        <button type="submit" class="btn btn-dark">Create An a Account</button>
+        <button type="submit" class="btn btn-dark"><a href="userlogin.html">Create An Account</a></button>
       </div>
       </div>
 
