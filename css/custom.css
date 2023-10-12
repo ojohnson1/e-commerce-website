@@ -1,17 +1,55 @@
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-
+html{
+    height: 100%;
+}
 
 body{
-    background-color: aliceblue;
+    height: 100%;
+    background-color: whitesmoke;
     background-image: url(../images/interweave-background-3.jpg);
 
+}
+
+main{
+    height: 100%;
+}
+
+.flexmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 #formrow label.form-label{
 margin-left:20px;
+}
+
+#registrationform{
+    max-width:75%
+}
+
+#edit :hover {
+ cursor: pointer;
+}
+
+#payment-form, #registrationform {
+    border: 3px #2C2741 solid;
+    background-color:whitesmoke ;
+}
+
+.loginform{
+    display: flex;
+}
+
+.logincard{
+    background-color: #c0c2d4;
+}
+
+#debit, #credit, #paypal {
+    outline:1px #2C2741 solid;
 }
