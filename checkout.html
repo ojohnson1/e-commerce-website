@@ -35,10 +35,10 @@
   <main>
     <div class="container">
       <form>
-        <div class="p-2 text-center">
+        <div class="p-2 mt-3 text-center">
           <h1 class="display-4">Your Info</h1>
         </div>
-        <div class="row g-5 my-5">
+        <div class="row g-5 my-3">
           <div class="col-md-5 col-lg-4 order-md-last">
             <table class="table">
 
@@ -68,7 +68,7 @@
                 </tr>
                 <tr>
                   <td>Default tip (20%)</td>
-                  <td class="text-muted text-start text-decoration-underline"> Edit </td>
+                  <td id="edit" class=" text-muted text-start text-decoration-underline"> Edit </td>
                   <td> $40</td>
                 </tr>
 
@@ -83,8 +83,8 @@
 
             </table>
           </div>
-          <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Your Address</h4>
+          <div id="payment-form"   class=" rounded col-md-7 col-lg-8 p-3">
+            <h4 class="mb-3 display-6">Your Address</h4>
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="FirstName" class="form-label">First name</label>
@@ -147,7 +147,7 @@
               </div>
               <hr class="my-4">
 
-              <h4 class="mb-3">Payment</h4>
+              <h4 class="mb-3 display-6">Payment</h4>
 
               <div class="my-3">
                 <div class="form-check">
@@ -185,7 +185,7 @@
                   <input type="text" class="form-control" id="cc-cvv" placeholder="123">
                   <label for="cc-cvv">CVV</label>
                 </div>
-                <button class=" w-100 btn btn-dark btn-lg" type="submit">Confirm Your Appointment</button>
+                <button class=" mb-3 w-100 btn btn-dark btn-lg" type="submit">Confirm Your Appointment</button>
               </div>
 
             </div>
