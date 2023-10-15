@@ -1,111 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/custom.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
- 
- 
+
   <body>
-
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">The Braid Bar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="userlogin.html">Login</a>
-                  <a class="nav-link" href="services.html">Services</a>
-                  <a class="nav-link" href="checkout.html">Checkout & Confirm</a>
-                
-                   
-                
-                 </div>
-              </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The Braid Bar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="userlogin.html">Login</a>
+              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="checkout.html">Checkout & Confirm</a>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main >
-
+    <main>
       <div class="container mt-5">
         <div class="row row-cols-lg-2 row-cols-sm-1">
           <div class="col">
-        <img class=".img"src="images/homepageimage.svg" alt="scissors and comb">
+            <img
+              src="images/homepageimage.svg"
+              alt="scissors and comb"
+            />
           </div>
           <div class="col p-5">
-            <h1 class="display-1"> The Braid Bar</h1>
-           
-           
-            <p>
-              Experience the ultimate in hair artistry at our braid salon, where our skilled stylists transform your locks into stunning works of art.
+            <h1 class="display-1">The Braid Bar</h1>
 
-              Elevate your personal style with our wide range of braiding techniques, from intricate cornrows to elegant fishtail braids, all tailored to suit your unique preferences.
+            <p>
+              Experience the ultimate in hair artistry at our braid salon, where
+              our skilled stylists transform your locks into stunning works of
+              art. Elevate your personal style with our wide range of braiding
+              techniques, from intricate cornrows to elegant fishtail braids,
+              all tailored to suit your unique preferences.
             </p>
 
             <p>
-              Indulge in a pampering session where relaxation meets creativity as our expert braiders craft exquisite designs that enhance your natural beauty. Join our community of satisfied clients who leave our braid salon feeling confident, refreshed, and ready to conquer the world with their gorgeous, braided hair.
+              Indulge in a pampering session where relaxation meets creativity
+              as our expert braiders craft exquisite designs that enhance your
+              natural beauty. Join our community of satisfied clients who leave
+              our braid salon feeling confident, refreshed, and ready to conquer
+              the world with their gorgeous, braided hair.
             </p>
 
-          <h2 class="display-5"> Guidelines</h2>
-        
-          <div class=" mb-3 accordion" id="accordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Schedule Updates
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Schedule updated every 15th of the month
+            <h2 class="display-5">Guidelines</h2>
+            
+            <!-- Displayed list items required for home page in an accordian -->
+            <div class="mb-3 accordion" id="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Schedule Updates
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="accordion-body">
+                    Schedule updated every 15th of the month
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    We Can Travel to You!
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="accordion-body">
+                    20 miles or 40 mins away includes $15 travel fee
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Cancellation Policy
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="accordion-body">
+                    Cancel atleast 24-48 hours in advance
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  We Can Travel to You!
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  20 miles or 40 mins away includes $15 travel fee
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                 Cancellation Policy
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Cancel atleast 24-48 hours in advance
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <a href="userlogin.html" class=" mb-3 btn btn-dark btn-lg">Book An Appointment</a>
+
+            <a href="userlogin.html" class="mb-3 btn btn-dark btn-lg"
+              >Book An Appointment</a
+            >
           </div>
         </div>
       </div>
-
     </main>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
