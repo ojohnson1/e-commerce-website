@@ -1,3 +1,5 @@
+/*# sourceMappingURL=style.css.map */
+
 a {
     text-decoration: none;
     color: white;
@@ -33,14 +35,16 @@ margin-left:20px;
     max-width:75%
 }
 
-#edit :hover {
+ #edit {
  cursor: pointer;
 }
 
 #payment-form, #registrationform {
     border: 3px #2C2741 solid;
-    background-color:whitesmoke ;
+    background-color:#c0c2d4;
 }
+
+
 
 .loginform{
     display: flex;
@@ -52,4 +56,22 @@ margin-left:20px;
 
 #debit, #credit, #paypal {
     outline:1px #2C2741 solid;
+}
+
+.btn{
+    background-color: #2C2741 ;
+}
+
+.form-check-input [type=radio] {
+    outline:1px #2C2741 solid;
+}
+
+#registrationform input,textarea {
+ 
+    outline:1px #2C2741 solid;
+}
+
+.accordion-button {
+ background-color: #c0c2d4;
+         
 }
