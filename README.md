@@ -1,6 +1,6 @@
-# e-commerce-website
+# The Braid Bar
 
-##First Capstone Project for Yearup demostrating use of git,bootstrap, CSS, HTML5
+## First Capstone Project for Yearup demostrating use of git,bootstrap, CSS, HTML5
 
 The purpose of this project is to demostrate using bootstrap,CSS,HTML5 in building a e-commerce site. I chose to build a site selling hairstyling services. I wanted the site to have a minimalistic look so the dervices could be showcased. I chose to create my layout utilizing bootstrap grid system. Bootstrap form classes were implemented to create logins, account registration, and payment forms. I also used cards to display services and to make the login form more noticeable on the page. The one piece of code that I am excited to build on is my modal for the tip section of my checkout cart. I also look foward to adding functions to my checkout cart with Javascript.
 
